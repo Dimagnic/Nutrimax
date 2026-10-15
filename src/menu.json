@@ -1,0 +1,9 @@
+{
+  "_nota": "Planes/productos. Si price es null se muestra 'Consultar precio'. Reemplaza por los datos reales del cliente.",
+  "plans": [
+    { "name": "Plan 1", "desc": "POR DEFINIR", "price": null, "unit": "", "features": [], "featured": false },
+    { "name": "Plan 2", "desc": "POR DEFINIR", "price": null, "unit": "", "features": [], "featured": true },
+    { "name": "Plan 3", "desc": "POR DEFINIR", "price": null, "unit": "", "features": [], "featured": false }
+  ],
+  "products": []
+}
