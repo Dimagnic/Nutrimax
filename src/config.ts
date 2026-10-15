@@ -195,6 +195,16 @@ export const form = {
 };
 
 export const footer = {
-  about: "Gimnasio y suplementos.",
-  legal: [] as { label: string; href: string }[], // aviso de privacidad, etc.
+  about: "Gimnasio y suplementos deportivos.",
+  navTitle: "Navegación",
+  servicesTitle: "Servicios",
+  // POR DEFINIR: ajusta a los servicios reales del negocio.
+  services: ["Gimnasio", "Suplementos deportivos", "Asesoría por WhatsApp", "Pedidos por WhatsApp"],
+  legalTitle: "Legal",
+  legal: [] as { label: string; href: string }[], // ej. { label: "Aviso de privacidad", href: "/aviso.html" }
+  note: "Precios en pesos mexicanos (MXN), sujetos a cambio sin previo aviso.",
+  assistantTitle: "Asistente virtual",
+  assistantImg: "qr-asistente.png", // public/images/qr-asistente.png
+  assistantCaption: "Escanea el código y chatea con nuestro asistente.",
+  credit: { text: "Diseñado por", name: "Cero+", logo: "cero-logo.png", url: "" },
 };

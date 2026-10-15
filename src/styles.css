@@ -202,7 +202,7 @@ h1,h2,h3,h4{font-family:var(--f-h);text-transform:uppercase;line-height:1.1;font
 
 /* footer */
 .footer{background:var(--dark);color:#d4d4d4;padding:56px 0 0}
-.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.fgrid{display:grid;grid-template-columns:1.3fr .9fr 1fr 1fr 1.1fr;gap:32px;align-items:start}
 .footer h4{color:var(--gold);font-size:.85rem;letter-spacing:.14em;margin-bottom:12px}
 .footer ul{list-style:none;padding:0;display:grid;gap:8px;font-size:.9rem}
 .footer a{text-decoration:none}
@@ -210,11 +210,19 @@ h1,h2,h3,h4{font-family:var(--f-h);text-transform:uppercase;line-height:1.1;font
 .logo-badge{background:#fff;border-radius:10px;padding:4px 8px;display:inline-flex}
 .logo-badge img{height:56px}
 .footer .brand{margin-bottom:12px}
-.social{display:flex;gap:14px;margin-top:12px;font-size:.88rem}
-.copy{border-top:1px solid #2c2c2c;margin-top:40px;padding:18px 0;font-size:.78rem;color:#999}
+.footer p{margin-bottom:10px;font-size:.9rem}
+.wa-link{color:#25d366;font-weight:700}
+.note{font-size:.85rem}
+.social{display:flex;gap:10px;margin-top:16px}
+.social a{width:40px;height:40px;border:1px solid #3a3a3a;border-radius:50%;display:grid;place-items:center}
+.qr{width:100%;max-width:190px;aspect-ratio:600/700;border-radius:10px;margin-bottom:12px}
+.credit{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-h);text-transform:uppercase;letter-spacing:.06em;color:#ddd;text-decoration:none}
+.cr-logo{background:#f8f8f8;border-radius:6px;padding:3px 8px;display:inline-flex}
+.cr-logo img{height:26px;width:auto}
+.copy{border-top:1px solid #2c2c2c;margin-top:40px;padding:18px 0;font-size:.78rem;color:#999;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 
 /* flotantes */
-.floating{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.floating{position:fixed;right:26px;bottom:94px;z-index:60;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
 .fab{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;border:0;cursor:pointer;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.3);transition:transform .2s,opacity .25s}
 .fab:hover{transform:scale(1.08)}
 .fab-wa{background:#25d366;animation:pulse 2.4s infinite}
@@ -246,7 +254,8 @@ h1,h2,h3,h4{font-family:var(--f-h);text-transform:uppercase;line-height:1.1;font
   .plans{grid-template-columns:1fr}
   .steps{grid-template-columns:repeat(2,1fr)}
   .track>*{flex-basis:calc((100% - 20px)/2)}
-  .fgrid{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr 1fr 1fr}
+  .fcol-brand{grid-column:1/-1}
 }
 @media (max-width:640px){
   :root{--hh:64px}
@@ -260,6 +269,7 @@ h1,h2,h3,h4{font-family:var(--f-h);text-transform:uppercase;line-height:1.1;font
   .carousel{grid-template-columns:1fr}
   .hero-btns .btn{width:100%}
   .form{padding:20px}
+  .copy{padding-right:80px}
   .brand{font-size:1.4rem}
   .brand img{height:38px}
 }
